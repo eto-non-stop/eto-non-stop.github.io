@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    display: flex;
+    display: grid;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
 }
@@ -13,21 +13,20 @@ body {
     grid-auto-rows: minmax(70px, auto);
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin: 100px 0px 0px 100px;
     width: 700px;
-    margin-left: 100px;
     min-height: 400px;
     box-shadow: 2px 2px 3px 1px rgba(196, 188, 188, 0.75);
 }
 
-ul {
+.list {
     padding: 0;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     list-style-type: none;
 }
 
-li {
+.skill {
     background-color: rgb(252, 233, 233);
     text-align: center;
     border-radius: 15px;
@@ -38,26 +37,84 @@ li {
     color: black;
 }
 
-a {
+.link1,
+.link2 {
     text-decoration: none;
-    color: black;
+    color: rgb(142, 12, 182);
 }
 
 a:hover {
-    color: rgb(112, 155, 221);
+    color: rgb(13, 15, 102);
 }
 
 .link1 {
-    background: url('../img/tg.png') no-repeat;
+    background: url('../img/tg.svg') no-repeat;
     background-position: left;
     background-size: contain;
     padding-left: 23px;
 }
 
 .link2 {
-    background: url('../img/post1.png') no-repeat;
+    background: url('../img/post.svg') no-repeat;
     background-position: left;
     background-size: contain;
     padding-left: 23px;
     margin-left: 25px;
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 650px) {
+    .link1,
+    .link2 {
+        margin-left: 30px;
+    }
+    .container {
+        font-size: 14px;
+        width: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .description {
+        padding: 0 20px;
+    }
+    .list {
+        margin: 0 30px;
+    }
+    li.skill {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .list {
+        margin-left: 80px;
+        grid-row-gap: 10px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .headline {
+        text-align: center;
+    }
+}
+
+@media (max-width: 350px) {
+    .list {
+        margin-left: 50px;
+    }
 }
