@@ -126,6 +126,9 @@ a:hover {
         grid-template-columns: 1fr;
         padding: 0;
     }
+    .description {
+        padding-top: 0;
+    }
     .headline {
         text-align: center;
         font-size: 30px;
