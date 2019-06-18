@@ -3,40 +3,45 @@ body {
     padding: 0;
     display: grid;
     align-items: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    font-family: 'Roboto', sans-serif;
-    padding: 0;
+    width: 1000px;
+    min-height: 400px;
     display: grid;
-    grid-template-columns: 20% 60%;
-    grid-auto-rows: minmax(70px, auto);
+    grid-template-columns: 30% 70%;
     justify-content: center;
     align-items: start;
     grid-gap: 20px;
     margin: 100px 0px 0px 100px;
-    width: 1000px;
-    min-height: 400px;
+    padding: 50px 50px;
     box-shadow: 2px 4px 10px 1px rgba(196, 188, 188, 0.75);
-    padding-top: 50px;
 }
 
-.list {
-    padding: 7px 20px 0px 0px;
+.headline {
+    font-weight: 700;
+    font-size: 36px;
+    color: rgb(32, 32, 32);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description {
+    padding-top: 30px;
+}
+
+.skills {
+    padding: 22px 100px 40px 0px;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    grid-gap: -50px;
+    justify-content: center;
     list-style-type: none;
-    padding-bottom: 40px;
-    width: 350px;
-    margin: 0;
 }
 
 .skill {
     background-color: rgb(243, 243, 243);
     text-align: center;
     display: block;
-    vertical-align: middle;
     border-radius: 15px;
     height: 25px;
     width: 60px;
@@ -45,105 +50,109 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.headline {
-    font-weight: 700;
-    font-size: 36px;
-    white-space: nowrap;
-    color: rgb(32, 32, 32);
-    margin: 0;
-    font-family: 'Montserrat', sans-serif;
-}
-
-.links {
-    margin: 0;
-    padding-top: 13px;
-    color: rgb(45, 34, 145);
-}
-
-.link1,
-.link2 {
-    text-decoration: none;
-    color: rgb(45, 34, 145);
-}
-
 a:hover {
     color: rgb(13, 15, 102);
 }
 
-.link1 {
-    background: url('../img/tg.svg') no-repeat;
-    background-position: left;
-    background-size: contain;
-    padding-left: 26px;
+.links {
+    padding-top: 42px;
+    color: rgb(45, 34, 145);
 }
 
-.link2 {
-    background: url('../img/post.svg') no-repeat;
+.link {
     background-position: left;
     background-size: contain;
+    background-repeat: no-repeat;
     padding-left: 26px;
+    text-decoration: none;
+    color: rgb(45, 34, 145);
+}
+
+.link_tg {
+    background-image: url('../img/tg.svg');
+}
+
+.link_mail {
+    background-image: url('../img/post.svg');
     margin-left: 25px;
-}
-
-.description {
-    margin: 0;
-    padding-top: 10px;
 }
 
 @media (max-width: 1200px) {
     .container {
         margin: 0;
         width: auto;
+        box-shadow: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .skills {
+        padding-top: 20px;
+    }
+    .links {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .link_tg {
+        margin-left: 25px;
     }
 }
 
 @media (max-width: 650px) {
-    .link1,
-    .link2 {
-        margin-left: 30px;
-    }
-    .container {
-        font-size: 14px;
+    .description {
+        padding-left: 20px;
         width: auto;
     }
-}
-
-@media (max-width: 600px) {
-    .description {
-        padding: 0 20px;
-    }
-    .list {
-        margin: 0 30px;
-    }
-    li.skill {
-        margin: 0 10px;
-    }
-}
-
-@media (max-width: 500px) {
-    .list {
-        display: grid;
+    .skills {
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+        padding: 20px 0 0 0;
+    }
+    .skill {
+        justify-self: center;
+    }
+    .links {
+        padding-left: 20px;
+    }
+    .headline {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .headline {
+        text-align: center;
+        font-size: 30px;
+        padding: 0;
+        margin: 0;
+    }
+    .headline {
+        font-size: 25px;
     }
 }
 
 @media (max-width: 400px) {
-    .list {
-        margin-left: 80px;
-        grid-row-gap: 10px;
-    }
     .container {
-        display: grid;
-        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 10px 10px;
     }
-    .headline {
-        text-align: center;
+    .links {
+        margin: 0;
+        padding: 0;
     }
 }
 
-@media (max-width: 350px) {
-    .list {
-        margin-left: 50px;
+@media (max-width: 300px) {
+    .container {
+        padding: 5px 5px;
+    }
+    .headline {
+        font-size: 20px;
     }
 }
