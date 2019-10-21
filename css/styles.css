@@ -96,3 +96,120 @@ a:hover {
     background-image: url('../img/post.svg');
     margin-left: 25px;
 }
+
+@media (max-width: 1100px) {
+    .container {
+        margin: 30px;
+    }
+    .links {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 920px) {
+    .description {
+        padding-left: 20px;
+    }
+    .skills-items {
+        padding-left: 20px;
+    }
+    .links {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 830px) {
+    .headline {
+        font-size: 30px;
+    }
+    .skills-items {
+        padding: 0px 40px;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-self: flex-end;
+        margin: 0;
+        margin-top: 35px;
+    }
+    .skill {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 740px) {
+    .container {
+        box-shadow: none;
+        padding: 20px;
+    }
+    .about-me {
+        margin-top: 0;
+    }
+    .links {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-gap: 15px;
+    }
+    .link_tg {
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 620px) {
+    .container {
+        margin: 0;
+        padding: 15px;
+    }
+    .description {
+        padding-left: 50px;
+    }
+    .links {
+        margin-left: 40px;
+    }
+    .skills-items {
+        margin-left: 40px;
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 460px) {
+    .headline {
+        font-size: 26px;
+    }
+    .skills-items {
+        margin-top: 0;
+        padding: 0 10px;
+    }
+    .link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 412px) {
+    .headline {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 380px) {
+    .links {
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    .skills-items {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+    }
+    .skill {
+        margin: 10px 0px 0px 10px;
+    }
+}
+
+@media (max-width: 340px) {
+    .link {
+        font-size: 12px;
+    }
+    .headline {
+        font-size: 20px;
+    }
+}
