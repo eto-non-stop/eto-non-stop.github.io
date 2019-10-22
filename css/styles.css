@@ -76,3 +76,32 @@ body {
 .contacts {
     margin-bottom: 10px;
 }
+
+@media (max-width: 900px) {
+    .skills-items {
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .skill {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        box-shadow: none;
+        width: 100%;
+        padding: 30px;
+        margin: 0;
+    }
+}
+
+@media (max-width: 400px) {
+    .headline {
+        font-size: 24px;
+    }
+    .skills-items {
+        padding: 0;
+    }
+}
