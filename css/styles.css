@@ -7,209 +7,72 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 70px 70px 70px 100px;
-    padding: 50px 50px;
-    box-shadow: 2px 4px 10px 1px rgba(196, 188, 188, 0.75);
-}
-
-.skills,
-.contacts {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px;
-    margin-top: 35px;
-    align-items: center;
-}
-
-.about-me {
-    display: flex;
-    justify-content: flex-start;
-    margin: 0px;
-    align-items: baseline;
+    margin: 20px 70px 20px 70px;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 6px 1px rgba(196, 188, 188, 0.75);
 }
 
 .headline {
-    font-weight: 700;
+    font-weight: 600;
     font-size: 36px;
     color: rgb(32, 32, 32);
     font-family: 'Montserrat', sans-serif;
-    width: 25%;
     margin: 0;
+    padding: 15px 0px;
 }
 
 .description {
-    width: 80%;
-    padding: 0;
     margin: 0;
+    padding: 0px;
     list-style-type: none;
 }
 
 .description-item {
-    padding-top: 10px;
+    padding: 6px;
 }
 
 .skills-items {
-    width: 80%;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 7px 5px;
 }
 
 .skill {
-    background-color: rgb(243, 243, 243);
-    border-radius: 15px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 13px;
     font-size: 15px;
-    padding: 8px 15px;
+    padding: 7px 15px;
     color: rgb(0, 0, 0);
-    margin-right: 20px;
-}
-
-a:hover {
-    color: rgb(13, 15, 102);
-}
-
-.links {
-    width: 80%;
-    color: rgb(45, 34, 145);
+    margin-right: 25px;
 }
 
 .link {
-    background-position: left;
-    background-size: contain;
-    background-repeat: no-repeat;
-    padding-left: 26px;
+    display: flex;
+    justify-content: flex-start;
+    padding: 7px 0px;
     text-decoration: none;
     color: rgb(45, 34, 145);
 }
 
-.link_tg {
-    background-image: url('../img/tg.svg');
+.icon {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
 }
 
-.link_mail {
-    background-image: url('../img/post.svg');
-    margin-left: 25px;
+.link:hover {
+    color: rgb(172, 42, 113);
 }
 
-@media (max-width: 1100px) {
-    .container {
-        margin: 30px;
-    }
-    .links {
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 920px) {
-    .description {
-        padding-left: 20px;
-    }
-    .skills-items {
-        padding-left: 20px;
-    }
-    .links {
-        padding-left: 20px;
-    }
-}
-
-@media (max-width: 830px) {
-    .headline {
-        font-size: 30px;
-    }
-    .skills-items {
-        padding: 0px 40px;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-self: flex-end;
-        margin: 0;
-        margin-top: 35px;
-    }
-    .skill {
-        margin-top: 10px;
-    }
-}
-
-@media (max-width: 740px) {
-    .container {
-        box-shadow: none;
-        padding: 20px;
-    }
-    .about-me {
-        margin-top: 0;
-    }
-    .links {
-        display: grid;
-        grid-auto-columns: 1fr;
-        grid-gap: 15px;
-    }
-    .link_tg {
-        margin-left: 25px;
-    }
-}
-
-@media (max-width: 620px) {
-    .container {
-        margin: 0;
-        padding: 15px;
-    }
-    .description {
-        padding-left: 50px;
-    }
-    .links {
-        margin-left: 40px;
-    }
-    .skills-items {
-        margin-left: 40px;
-        padding: 0 20px;
-    }
-}
-
-@media (max-width: 460px) {
-    .headline {
-        font-size: 26px;
-    }
-    .skills-items {
-        margin-top: 0;
-        padding: 0 10px;
-    }
-    .link {
-        font-size: 14px;
-    }
-}
-
-@media (max-width: 412px) {
-    .headline {
-        font-size: 22px;
-    }
-}
-
-@media (max-width: 380px) {
-    .links {
-        margin-left: 15px;
-        font-size: 12px;
-    }
-    .skills-items {
-        width: 100%;
-        padding: 0;
-        margin: 0;
-        margin-left: 10px;
-    }
-    .skill {
-        margin: 10px 0px 0px 10px;
-    }
-}
-
-@media (max-width: 340px) {
-    .link {
-        font-size: 12px;
-    }
-    .headline {
-        font-size: 20px;
-    }
+.about-me,
+.skills,
+.contacts {
+    margin-bottom: 10px;
 }
