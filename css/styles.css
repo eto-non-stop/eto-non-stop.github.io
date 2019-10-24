@@ -28,7 +28,7 @@ body {
 .description {
     margin: 0;
     padding: 0px;
-    list-style-type: none;
+    list-style-type: lower-greek;
 }
 
 .description-item {
@@ -75,6 +75,10 @@ body {
 .skills,
 .contacts {
     margin-bottom: 10px;
+}
+
+p {
+    padding-left: 6px;
 }
 
 @media (max-width: 900px) {
