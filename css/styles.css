@@ -19,20 +19,26 @@ body {
 .headline {
     font-weight: 600;
     font-size: 36px;
-    color: rgb(32, 32, 32);
+    color: rgb(49, 48, 48);
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    padding: 15px 0px;
+    padding: 15px 6px;
 }
 
-.description {
+.description-items {
     margin: 0;
     padding: 0px;
-    list-style-type: lower-greek;
+    list-style-type: disclosure-open;
 }
 
 .description-item {
     padding: 6px;
+}
+
+.description {
+    padding: 6px;
+    margin: 0;
+    line-height: 22px;
 }
 
 .skills-items {
@@ -41,7 +47,7 @@ body {
     align-items: center;
     list-style-type: none;
     margin: 0px;
-    padding: 7px 5px;
+    padding: 7px 7px;
 }
 
 .skill {
@@ -56,7 +62,7 @@ body {
 .link {
     display: flex;
     justify-content: flex-start;
-    padding: 7px 0px;
+    padding: 7px 7px;
     text-decoration: none;
     color: rgb(45, 34, 145);
 }
@@ -78,12 +84,12 @@ body {
 }
 
 p {
-    padding-left: 6px;
+    padding: 8px 6px;
 }
 
 @media (max-width: 900px) {
     .skills-items {
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         flex-wrap: wrap;
     }
