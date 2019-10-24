@@ -2,49 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Токина Мария резюме</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Резюме</title>
+    <link rel="stylesheet" href="./css/styles.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap');
+        @import url("https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800,900&display=swap");
     </style>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Roboto:300&display=swap&subset=cyrillic,cyrillic-ext');
+        @import url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap&subset=cyrillic,cyrillic-ext");
     </style>
 </head>
 
 <body>
     <div class="container">
-        <h2 class="headline">Обо мне</h2>
-        <ul class="description">
-            <li class="description-item"> Начинающий frontend разработчик. </li>
-            <li class="description-item"> Профессиональные навыки и умения: </li>
-            <li class="description-item">- HTML5. Кроссбраузерная, адаптивная, валидная вёрстка.</li>
-            <li class="description-item">- CSS3. Использую flexbox/grid. Знакома с препроцессорами.</li>
-            <li class="description-item">- JavaScript (начальные знания).</li>
-            <li class="description-item">- React.js (начальные знания).</li>
-            <li class="description-item">- GIT. Знание базовых команд для работы с GitHub.</li>
-            <li class="description-item">Есть опыт работы в Linux.</li>
-            <li class="description-item"> Все перечисленные навыки получала самостоятельно, обучаясь при помощи курсов на HTML Academy, Stepik и др. </li>
-            Готова работать 24/7 чтобы развивать уже имеющиеся навыки и приобретать новые. <br> До этого работала в сфере общественного питания, поэтому легко нахожу общий язык с людьми.</ul>
+        <div class="about-me">
+            <h2 class="headline">Обо мне</h2>
 
-        <h2 class="headline">Навыки</h2>
-        <ul class="skills">
-            <li class="skill">HTML</li>
-            <li class="skill">CSS</li>
-            <li class="skill">LESS</li>
-            <li class="skill">JavaScript</li>
-            <li class="skill">React</li>
-            <li class="skill">GIT</li>
+            <p>Начинающий frontend разработчик.</p>
+            <p>Профессиональные навыки и умения:</p>
+            <ul class="description">
+                <li class="description-item">
+                    HTML5. Кроссбраузерная, адаптивная, валидная вёрстка.
+                </li>
+                <li class="description-item">
+                    CSS3. Использую flexbox/grid. Знакома с препроцессорами.
+                </li>
+                <li class="description-item">JavaScript (начальные знания).</li>
+                <li class="description-item">React.js (начальные знания).</li>
+                <li class="description-item">
+                    Git. Знание базовых команд для работы с GitHub.
+                </li>
+                <li class="description-item">Есть опыт работы в Linux.</li>
+            </ul>
+            <p>Все навыки развивала самостоятельно, обучаясь при помощи различных ресурсов (HTML Academy, Stepik и др). <br> Большую часть свободного времени посвящаю профессиональному развитию: читаю литературу, слушаю подкасты, хожу на митапы и конференции,
+                чтобы быть в курсе событий в мире IT. <br> Долгое время работала в сфере общественного питания, где развила софт-скилы до достаточно высокого уровня. </p>
 
-        </ul>
+        </div>
 
-        <h2 class="headline">Контакты</h2>
-        <div class="links">
-            <a href="https://t.me/m_tokina" class="link link_tg">@m_tokina</a>
-            <a href="mailto:mariya.tokina@gmail.com" class="link link_mail">mariya.tokina@gmail.com</a>
+        <div class="skills">
+            <h2 class="headline">Навыки</h2>
+            <ul class="skills-items">
+                <li class="skill">HTML</li>
+                <li class="skill">CSS</li>
+                <li class="skill">LESS</li>
+                <li class="skill">JavaScript</li>
+                <li class="skill">React</li>
+                <li class="skill">Git</li>
+            </ul>
+        </div>
+
+        <div class="contacts">
+            <h2 class="headline">Контакты</h2>
+            <div class="links">
+                <a href="https://t.me/m_tokina" class="link link_tg">
+                    <img src="./img/tg.svg" alt="tg" class="icon" /> @m_tokina</a>
+                <a href="mailto:mariya.tokina@gmail.com" class="link link_mail">
+                    <img src="./img/post.svg" alt="post" class="icon" /> mariya.tokina@gmail.com
+                </a>
+            </div>
         </div>
     </div>
 </body>
